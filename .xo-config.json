@@ -1,0 +1,27 @@
+{
+	"extends": ["eslint:recommended", "plugin:prettier/recommended", "xo-react"],
+	"prettier": true,
+	"envs": ["es2021", "node", "browser"],
+	"rules": {
+		"unicorn/filename-case": [
+			"error",
+			{
+				"cases": {
+					"camelCase": true,
+					"pascalCase": true,
+					"kebabCase": true
+				}
+			}
+		],
+		"react/function-component-definition": [
+			"error",
+			{ "namedComponents": "arrow-function" }
+		],
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		"import/extensions": "off",
+		"n/file-extension-in-import": "off",
+		"@typescript-eslint/triple-slash-reference": "off",
+		"prettier/prettier": "off"
+	}
+}
